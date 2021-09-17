@@ -12,7 +12,6 @@ $(document).ready(function() {
         parseInt(lpercent);
         let spend = (lsalary * lpercent / 100).toFixed(2);
         $('#spend').text(spend + '$');
-        
     });
     
 });
