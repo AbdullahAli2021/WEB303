@@ -1,10 +1,13 @@
 /*
     Assignment 4
-    {Your name here}
+    Abdullah Ali
 */
 
 $(document).ready(function(){
     // your code here
+    navigator.geolocation.getCurrentPosition(function (position){
+        $('#youarehere').html("The latitude is: " + position.coords.latitude + "<br>" + `The longitude is: ${position.coords.longitude}`);
+    })
 
 
 
