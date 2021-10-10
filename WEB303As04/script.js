@@ -5,9 +5,37 @@
 
 $(document).ready(function(){
     // your code here
-    navigator.geolocation.getCurrentPosition(function (position){
-        $('#youarehere').html("The latitude is: " + position.coords.latitude + "<br>" + `The longitude is: ${position.coords.longitude}`);
-    })
+     navigator.geolocation.getCurrentPosition(function (position){
+        let lat = position.coords.latitude;
+        let long = position.coords.longitude;
+        $('#youarehere').html("The latitude is: " + lat + "<br>" + `The longitude is: ${long}`);
+        // Get the longitude and latitude from localStorage
+        let lat2 = localStorage.getItem('latitude');
+        let long2 = localStorage.getItem('longitude');
+        //If its not the first time
+        if ((lat2 && long2) != null){
+            let moving = calcDistance(lat,long,lat2,long2);
+            $('#youarehere').append("<br><br>  Last position <br> The latitude is: " + lat2 + "<br>" + `The longitude is: ${long2} <br><br> You moved ${moving} meters.`
+            );
+
+        }
+        //if localStorage is not available
+        if (localStorage == null){
+            $('#youarehere').append('<br><br>The localStorage is not available!!!')
+        }
+        //if its the first time
+        if ((lat2 && long2) === null) {
+            $('#youarehere').append("<br><br>Welcome it seems that it is your first visit!!!");
+        }
+        // Store the new position in the localStorage
+        localStorage.setItem('latitude', lat);
+        localStorage.setItem('longitude',long);
+
+        
+    }, function(){
+        $('#youarehere').html("The geolocation is not available on your browser, please turn on the geolocation!!!")
+    });
+
 
 
 
@@ -33,5 +61,6 @@ $(document).ready(function(){
         return ( R * c );
     }
 });
+
 
 
