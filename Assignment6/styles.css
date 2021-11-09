@@ -1,0 +1,86 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+
+
+/* Accordion Style */
+ul.accordion{
+    list-style-type: none;
+    padding-left: 0;
+}
+.accordion-control{
+    display: block;
+    text-align: center;
+    color: white;
+    background-color:green;
+    border: 1px solid #000;
+    border-bottom: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.accordion-control:hover{
+    text-decoration: underline;
+    background-color: darkgreen;
+}
+li:last-child .accordion-control{
+    border-bottom: 1px solid #000;
+}
+li:last-child .accordion-control.active{
+    border-bottom: 0px;
+}
+.accordion-panel{
+    display: none;
+    background-color: lightgreen;
+    border: 1px solid #000;
+    border-top: 0;
+    border-bottom:0;
+;
+}
+li:last-child .accordion-panel{
+    border-bottom: 1px solid #000;
+}
+
+/* Tabs style */
+
+.tab-list{
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+}
+.tab-list li{
+    display: inline-block;
+    width: 100px;
+}
+.tab-list li a{
+    display: block;
+    text-align: center;
+    background-color: darkblue;
+    border: 1px solid #000;
+    color: white;
+    text-decoration: none;
+}
+.tab-list li.active a{
+    color: #fff;
+    border-bottom: 1px solid darkblue;
+}
+
+
+.tab-panel {
+    display: none;
+    padding: 16px;
+    border: 1px solid #000;
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+    background-color: lightblue;
+}
+.tab-panel.active {
+    display: block;
+}
