@@ -1,0 +1,65 @@
+{
+    "characters": [
+        {
+            "name": "Superman",
+            "power": "flying",
+            "country": "US",
+            "age": "27"
+        },
+        {
+            "name": "Batman",
+            "power": "Bat skills",
+            "country": "US",
+            "age": "39"
+        },
+        {
+            "name": "Spiderman",
+            "power": "spider web",
+            "country": "UK",
+            "age": "32"
+        },
+        {
+            "name": "Captain America",
+            "power": "shield",
+            "country": "US",
+            "age": "33"
+        },
+        {
+            "name": "WonderWoman",
+            "power": "Everything",
+            "country": "Australia",
+            "age": "22"
+        },
+        {
+            "name": "IronMan",
+            "power": "Fist",
+            "country": "France",
+            "age": "22"
+        },
+        {
+            "name": "Joker",
+            "power": "Comic",
+            "country": "Portugal",
+            "age": "66"
+        },
+        {
+            "name": "Wolverine",
+            "power": "Wolf",
+            "country": "US",
+            "age": "33"
+        },
+        {
+            "name": "Red Guardian",
+            "power": "Shield",
+            "country": "Russia",
+            "age": "65"
+        },
+        {
+            "name": "Winter Soldier",
+            "power": "Cold",
+            "country": "Canada",
+            "age": "32"
+        }
+        
+    ]
+}
