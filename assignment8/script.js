@@ -15,11 +15,11 @@ $(function() {
     
     });
 
-    ('.name').addClass('active');
+    
 
     $("#search").keyup(function () {
-        var data = this.value.toUpperCase().split(" ");    
-        $("#characters").find('.name').each(function (index, elem) {
+        var data = this.value.toLowerCase();    
+        $('tr').each(function (index, elem) {
         var $elem = $(elem);
             for (var d = 0; d < data.length; ++d) {
                     //alert($elem.val());
@@ -34,5 +34,4 @@ $(function() {
         })     
     }) 
 
-}
-)
+})
