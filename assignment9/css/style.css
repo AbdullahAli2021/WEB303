@@ -1,0 +1,17 @@
+.active {
+    background-color: yellow;
+    color: black;
+}
+
+.cascending {
+    display: none;
+}
+
+.cdescending {
+    display: none;
+}
+
+thead{
+    background-color: aqua;
+    font-weight: bolder;
+}
