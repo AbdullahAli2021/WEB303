@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="as10" action="/register/" method="post">
+          <fieldset>
+            <legend>Login</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" />
+            <label for="pwd2">Confirm Password:</label>
+            <input type="password" id="pwd2" name="pwd2" />
+            <label><input type="checkbox" value="I accept the terms of service" id="accept">I accept the terms of service</label>
+            <select id="country" name="country">
+                <option>Please choose a country first</option>
+              </select>
+            <input type="submit" value="Login" id="submit" />
+          </fieldset>
+      </form>
+      <div id="main"></div>
+    </div><!-- .container -->
+    <script src="script.js"></script>
+  </body>
+</html>
